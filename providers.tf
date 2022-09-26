@@ -15,13 +15,13 @@ terraform {
 }
 
 data "google_client_config" "provider" {
-  credentials = var.gcp-creds
+
 }
 
 data "google_container_cluster" "primary" {
   name     = "${var.project_id}-gke"
   location = var.region
-  credentials = var.gcp-creds
+  
 }
 
 provider "google" {

@@ -19,7 +19,7 @@ data "google_client_config" "provider" {
 }
 
 data "google_container_cluster" "primary" {
-  name     = "${var.project_id}-gke"
+  name     = "${var.project_id}-gke-vcs"
   location = var.region
   
 }

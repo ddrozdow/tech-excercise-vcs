@@ -22,7 +22,7 @@ data "google_container_cluster" "primary" {
 }
 
 provider "google" {
-  credentials = file("hashicorp-361616-4bac7aea4b81.json")
+  credentials = var.gcp-creds
 
   project = "hashicorp-361616"
   region  = "us-central1"

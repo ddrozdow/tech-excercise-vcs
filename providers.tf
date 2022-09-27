@@ -36,7 +36,7 @@ terraform {
     organization = "example-org-8ad09e"
 
     workspaces {
-      name = "tech-excercise"
+      name = "tech-excercise-vcs"
     }
   }
 }
